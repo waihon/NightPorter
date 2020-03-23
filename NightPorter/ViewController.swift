@@ -11,15 +11,37 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource {
 
     func numberOfSections(in tableView: UITableView) -> Int {
-        <#code#>
+        return 3
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        switch section {
+        case 0:
+            return dailyTasks.count
+        case 1:
+            return weeklyTasks.count
+        case 2:
+            return monthlyTasks.count
+        default:
+            return 0
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = UITableViewCell()
+        
+        switch indexPath.section {
+        case 0:
+            cell.textLabel?.text = dailyTasks[indexPath.row]
+        case 1:
+            cell.textLabel?.text = weeklyTasks[indexPath.row]
+        case 2:
+            cell.textLabel?.text = monthlyTasks[indexPath.row]
+        default:
+            cell.textLabel?.text = "This shouldn't happen"
+        }
+        
+        return cell
     }
     
 
