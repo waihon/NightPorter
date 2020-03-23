@@ -44,6 +44,18 @@ class ViewController: UIViewController, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        switch section {
+        case 0:
+            return "Daily Tasks"
+        case 1:
+            return "Weekly Tasks"
+        case 2:
+            return "Monthly Tasks"
+        default:
+            return nil
+        }
+    }
 
     // Create string array of tasks
     let dailyTasks = ["Check all windows",
