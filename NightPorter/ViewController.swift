@@ -50,6 +50,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
         
         cell.imageView?.image = UIImage(named: "task")
+        cell.accessoryType = .disclosureIndicator
         
         return cell
     }
