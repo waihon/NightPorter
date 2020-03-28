@@ -49,6 +49,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             cell.textLabel?.text = "This shouldn't happen"
         }
         
+        cell.imageView?.image = UIImage(named: "task")
+        
         return cell
     }
     
