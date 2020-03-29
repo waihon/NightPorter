@@ -42,17 +42,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         case 0:
             cell.textLabel?.text = dailyTasks[indexPath.row][0]
             cell.detailTextLabel?.text = dailyTasks[indexPath.row][1]
+            cell.imageView?.image = UIImage(named: "dailyTask")
         case 1:
             cell.textLabel?.text = weeklyTasks[indexPath.row][0]
             cell.detailTextLabel?.text = weeklyTasks[indexPath.row][1]
+            cell.imageView?.image = UIImage(named: "weeklyTask")
         case 2:
             cell.textLabel?.text = monthlyTasks[indexPath.row][0]
             cell.detailTextLabel?.text = monthlyTasks[indexPath.row][1]
+            cell.imageView?.image = UIImage(named: "monthlyTask")
         default:
             cell.textLabel?.text = "This shouldn't happen"
         }
         
-        cell.imageView?.image = UIImage(named: "task")
         cell.accessoryType = .disclosureIndicator
         
         return cell
