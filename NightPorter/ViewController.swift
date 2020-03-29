@@ -37,31 +37,26 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "normalCell", for: indexPath)
-        let textLabel: String
-        let detailTextLabel: String?
+        let tasksArray: [[String]]?
         let imageView: UIImage?
         
         switch indexPath.section {
         case 0:
-            textLabel = dailyTasks[indexPath.row][0]
-            detailTextLabel = dailyTasks[indexPath.row][1]
+            tasksArray = dailyTasks
             imageView = UIImage(named: "dailyTask")!
         case 1:
-            textLabel = weeklyTasks[indexPath.row][0]
-            detailTextLabel = weeklyTasks[indexPath.row][1]
+            tasksArray = weeklyTasks
             imageView = UIImage(named: "weeklyTask")!
         case 2:
-            textLabel = monthlyTasks[indexPath.row][0]
-            detailTextLabel = monthlyTasks[indexPath.row][1]
+            tasksArray = monthlyTasks
             imageView = UIImage(named: "monthlyTask")!
         default:
-            textLabel = "This shouldn't happen"
-            detailTextLabel = nil
+            tasksArray = nil
             imageView = nil
         }
 
-        cell.textLabel?.text = textLabel
-        cell.detailTextLabel?.text = detailTextLabel
+        cell.textLabel?.text = tasksArray?[indexPath.row][0]
+        cell.detailTextLabel?.text = tasksArray?[indexPath.row][1]
         cell.imageView?.image = imageView
         cell.accessoryType = .disclosureIndicator
         
