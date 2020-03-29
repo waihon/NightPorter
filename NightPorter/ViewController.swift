@@ -37,24 +37,32 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "normalCell", for: indexPath)
+        let textLabel: String
+        let detailTextLabel: String?
+        let imageView: UIImage?
         
         switch indexPath.section {
         case 0:
-            cell.textLabel?.text = dailyTasks[indexPath.row][0]
-            cell.detailTextLabel?.text = dailyTasks[indexPath.row][1]
-            cell.imageView?.image = UIImage(named: "dailyTask")
+            textLabel = dailyTasks[indexPath.row][0]
+            detailTextLabel = dailyTasks[indexPath.row][1]
+            imageView = UIImage(named: "dailyTask")!
         case 1:
-            cell.textLabel?.text = weeklyTasks[indexPath.row][0]
-            cell.detailTextLabel?.text = weeklyTasks[indexPath.row][1]
-            cell.imageView?.image = UIImage(named: "weeklyTask")
+            textLabel = weeklyTasks[indexPath.row][0]
+            detailTextLabel = weeklyTasks[indexPath.row][1]
+            imageView = UIImage(named: "weeklyTask")!
         case 2:
-            cell.textLabel?.text = monthlyTasks[indexPath.row][0]
-            cell.detailTextLabel?.text = monthlyTasks[indexPath.row][1]
-            cell.imageView?.image = UIImage(named: "monthlyTask")
+            textLabel = monthlyTasks[indexPath.row][0]
+            detailTextLabel = monthlyTasks[indexPath.row][1]
+            imageView = UIImage(named: "monthlyTask")!
         default:
-            cell.textLabel?.text = "This shouldn't happen"
+            textLabel = "This shouldn't happen"
+            detailTextLabel = nil
+            imageView = nil
         }
-        
+
+        cell.textLabel?.text = textLabel
+        cell.detailTextLabel?.text = detailTextLabel
+        cell.imageView?.image = imageView
         cell.accessoryType = .disclosureIndicator
         
         return cell
