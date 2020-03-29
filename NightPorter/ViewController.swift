@@ -40,11 +40,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         switch indexPath.section {
         case 0:
-            cell.textLabel?.text = dailyTasks[indexPath.row]
+            cell.textLabel?.text = dailyTasks[indexPath.row][0]
+            cell.detailTextLabel?.text = dailyTasks[indexPath.row][1]
         case 1:
-            cell.textLabel?.text = weeklyTasks[indexPath.row]
+            cell.textLabel?.text = weeklyTasks[indexPath.row][0]
+            cell.detailTextLabel?.text = weeklyTasks[indexPath.row][1]
         case 2:
-            cell.textLabel?.text = monthlyTasks[indexPath.row]
+            cell.textLabel?.text = monthlyTasks[indexPath.row][0]
+            cell.detailTextLabel?.text = monthlyTasks[indexPath.row][1]
         default:
             cell.textLabel?.text = "This shouldn't happen"
         }
@@ -69,21 +72,40 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
 
     // Create string array of tasks
-    let dailyTasks = ["Check all windows",
-                      "Check all doors",
-                      "Is the boiler fueled?",
-                      "Check the mailbox",
-                      "Empty trash containers",
-                      "If freezing, check water pipes",
-                      "Document \"strange & unusual\" occurrences"]
+    let dailyTasks: [[String]] = [
+        ["Check all windows",
+         "Windows must be closed"],
+        ["Check all doors",
+         "Doors must be locked"],
+        ["Is the boiler fueled?",
+         "Refill fuel if below 30%"],
+        ["Check the mailbox",
+         "Collect any mail"],
+        ["Empty trash containers",
+         "Wash the containers as well"],
+        ["If freezing, check water pipes",
+        "Ensure water flows"],
+        ["Document \"strange & unusual\" occurrences",
+         "Capture with date & time"],
+    ]
 
-    let weeklyTasks = ["Check inside all cabins",
-                       "Flush all lavatories in cabins",
-                       "Walk the perimeter of property"]
+    let weeklyTasks: [[String]] = [
+        ["Check inside all cabins",
+         "Bring along cabin keys"],
+        ["Flush all lavatories in cabins",
+         "Close the door of lavatories"],
+        ["Walk the perimeter of property",
+         "Bring along torch light"]
+    ]
 
-    let monthlyTasks = ["Test security alarm",
-                        "Test motion detectors",
-                        "Test smoke alarms"]
+    let monthlyTasks: [[String]] = [
+        ["Test security alarm",
+         "Call security firm if not working"],
+        ["Test motion detectors",
+         "Call security firm if not working"],
+        ["Test smoke alarms",
+         "Call fire department if not working"]
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
