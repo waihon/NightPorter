@@ -43,6 +43,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="IMG-24-TzJ" kind="show" id="wS0-Gn-GLM"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -70,6 +73,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="RqL-PH-pLe"/>
                     </view>
+                    <navigationItem key="navigationItem" id="G8E-y2-xqg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1db-uJ-dbE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
