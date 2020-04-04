@@ -66,7 +66,7 @@
         <!--Detail View Controller-->
         <scene sceneID="b34-xI-Q2i">
             <objects>
-                <viewController id="IMG-24-TzJ" customClass="DetailViewController" sceneMemberID="viewController">
+                <viewController id="IMG-24-TzJ" customClass="DetailViewController" customModule="NightPorter" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7QN-ve-jga">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -94,6 +94,9 @@
                         <viewLayoutGuide key="safeArea" id="RqL-PH-pLe"/>
                     </view>
                     <navigationItem key="navigationItem" id="G8E-y2-xqg"/>
+                    <connections>
+                        <outlet property="currentImage" destination="J0N-d3-byF" id="rY1-7D-x71"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1db-uJ-dbE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
