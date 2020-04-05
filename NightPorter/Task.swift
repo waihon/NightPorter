@@ -15,13 +15,15 @@ enum Frequency: Int {
 }
 
 class Task: NSObject {
-    var frequency: Frequency?
-    var title: String?
-    var subtitle: String?
+    var frequency: Frequency
+    var title: String
+    var subtitle: String
+    var imageName: String
     
-    init(frequency: Frequency, title: String, subtitle: String) {
+    init(frequency: Frequency, title: String, subtitle: String, imageName: String) {
         self.frequency = frequency
         self.title = title
         self.subtitle = subtitle
+        self.imageName = imageName
     }
 }
