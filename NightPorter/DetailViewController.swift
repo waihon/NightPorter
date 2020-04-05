@@ -10,8 +10,12 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var taskTitle: UILabel!
+    @IBOutlet weak var taskSubtitle: UILabel!
     @IBOutlet weak var currentImage: UIImageView!
 
+    var currentTask: Task?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

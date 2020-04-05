@@ -96,6 +96,8 @@
                     <navigationItem key="navigationItem" id="G8E-y2-xqg"/>
                     <connections>
                         <outlet property="currentImage" destination="J0N-d3-byF" id="rY1-7D-x71"/>
+                        <outlet property="taskSubtitle" destination="fHS-c7-KLs" id="oMU-JF-mHC"/>
+                        <outlet property="taskTitle" destination="n96-xq-0uK" id="ktT-BY-AgQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1db-uJ-dbE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
