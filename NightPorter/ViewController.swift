@@ -10,6 +10,29 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    // Create array of tasks by frequency
+    let dailyTasks: [Task] = [
+        Task(frequency: .daily, title: "Check all windows", subtitle: "Windows must be closed", imageName: "windows"),
+        Task(frequency: .daily, title: "Check all doors", subtitle: "Doors must be locked", imageName: "door"),
+        Task(frequency: .daily, title: "Is the boiler fueled?", subtitle: "Refill fuel if below 30%", imageName: "boiler"),
+        Task(frequency: .daily, title: "Check the mailbox", subtitle: "Collect any mail", imageName: "mailbox"),
+        Task(frequency: .daily, title: "Empty trash containers", subtitle: "Wash the containers as well", imageName: "trashcontainer"),
+        Task(frequency: .daily, title: "If freezing, check water pipes", subtitle: "Ensure water flows", imageName: "waterpipes"),
+        Task(frequency: .daily, title: "Document \"strange & unusual\" occurrences", subtitle: "Capture with date & time", imageName: "notebook")
+    ]
+
+    let weeklyTasks: [Task] = [
+        Task(frequency: .weekly, title: "Check inside all cabins", subtitle: "Bring along cabin keys", imageName: "cabins"),
+        Task(frequency: .weekly, title: "Flush all lavatories in cabins", subtitle: "Close the door of lavatories", imageName: "lavatory"),
+        Task(frequency: .weekly, title: "Walk the perimeter of property", subtitle: "Bring along torch light", imageName: "perimeter")
+    ]
+
+    let monthlyTasks: [Task] = [
+        Task(frequency: .monthly, title: "Test security alarm", subtitle: "Call security firm if not working", imageName: "securityalarm"),
+        Task(frequency: .monthly, title: "Test motion detectors", subtitle: "Call security firm if not working", imageName: "motiondetector"),
+        Task(frequency: .monthly, title: "Test smoke alarms", subtitle: "Call fire department if not working", imageName: "smokealarm")
+    ]
+
     // Table View Delegate Methods
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -37,7 +60,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "normalCell", for: indexPath)
-        let tasksArray: [[String]]?
+        let tasksArray: [Task]?
         let imageView: UIImage?
         
         switch indexPath.section {
@@ -55,8 +78,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             imageView = nil
         }
 
-        cell.textLabel?.text = tasksArray?[indexPath.row][0]
-        cell.detailTextLabel?.text = tasksArray?[indexPath.row][1]
+        cell.textLabel?.text = tasksArray?[indexPath.row].title
+        cell.detailTextLabel?.text = tasksArray?[indexPath.row].subtitle
         cell.imageView?.image = imageView
         cell.accessoryType = .disclosureIndicator
         
@@ -75,42 +98,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             return nil
         }
     }
-
-    // Create string array of tasks
-    let dailyTasks: [[String]] = [
-        ["Check all windows",
-         "Windows must be closed"],
-        ["Check all doors",
-         "Doors must be locked"],
-        ["Is the boiler fueled?",
-         "Refill fuel if below 30%"],
-        ["Check the mailbox",
-         "Collect any mail"],
-        ["Empty trash containers",
-         "Wash the containers as well"],
-        ["If freezing, check water pipes",
-        "Ensure water flows"],
-        ["Document \"strange & unusual\" occurrences",
-         "Capture with date & time"],
-    ]
-
-    let weeklyTasks: [[String]] = [
-        ["Check inside all cabins",
-         "Bring along cabin keys"],
-        ["Flush all lavatories in cabins",
-         "Close the door of lavatories"],
-        ["Walk the perimeter of property",
-         "Bring along torch light"]
-    ]
-
-    let monthlyTasks: [[String]] = [
-        ["Test security alarm",
-         "Call security firm if not working"],
-        ["Test motion detectors",
-         "Call security firm if not working"],
-        ["Test smoke alarms",
-         "Call fire department if not working"]
-    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
