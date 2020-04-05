@@ -10,10 +10,14 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var currentImage: UIImageView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let image = UIImage(named: "windows")
+        currentImage.image = image
     }
     
 
