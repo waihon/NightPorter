@@ -20,7 +20,9 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let image = UIImage(named: "windows")
+        taskTitle.text = currentTask!.title
+        taskSubtitle.text = currentTask!.subtitle
+        let image = UIImage(named: currentTask!.imageName)
         currentImage.image = image
     }
     
