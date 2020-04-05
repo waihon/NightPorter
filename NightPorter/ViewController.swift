@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet weak var tableView: UITableView!
+    
     // Create array of tasks by frequency
     let dailyTasks: [Task] = [
         Task(frequency: .daily, title: "Check all windows", subtitle: "Windows must be closed", imageName: "windows"),
@@ -105,6 +107,24 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         self.title = "Night Porter"
     }
 
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var tasks: [Task]?
+        if let indexPath = self.tableView.indexPathForSelectedRow {
+            switch indexPath.section {
+            case Frequency.daily.rawValue:
+                tasks = dailyTasks
+            case Frequency.weekly.rawValue:
+                tasks = weeklyTasks
+            case Frequency.monthly.rawValue:
+                tasks = monthlyTasks
+            default:
+                tasks = nil
+            }
+            if tasks != nil {
+                let detailViewController = segue.destination as! DetailViewController
+                detailViewController.currentTask = tasks![indexPath.row]
+            }
+        }
+    }
 }
 
