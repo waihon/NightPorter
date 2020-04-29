@@ -121,7 +121,7 @@
             </objects>
             <point key="canvasLocation" x="2504.3478260869565" y="118.52678571428571"/>
         </scene>
-        <!--Auto Layout View Controller-->
+        <!--Item-->
         <scene sceneID="Gfn-ha-odc">
             <objects>
                 <viewController id="D8k-0M-Gqh" customClass="AutoLayoutViewController" customModule="NightPorter" customModuleProvider="target" sceneMemberID="viewController">
@@ -131,6 +131,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="jdR-7b-RaX"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="fQu-DI-ZJc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3On-g5-Sxu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -167,6 +168,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="U6C-iD-rCK" kind="relationship" relationship="viewControllers" id="GF9-vh-s5D"/>
+                        <segue destination="D8k-0M-Gqh" kind="relationship" relationship="viewControllers" id="fi3-vu-YI5"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WRc-og-clk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
