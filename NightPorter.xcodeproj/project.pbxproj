@@ -46,7 +46,6 @@
 		4FE78EAD24279A30000D7B03 = {
 			isa = PBXGroup;
 			children = (
-				4F35E2452459D9DA005E10A5 /* AutoLayoutViewController.swift */,
 				4FE78EB824279A31000D7B03 /* NightPorter */,
 				4FE78EB724279A31000D7B03 /* Products */,
 			);
@@ -63,6 +62,7 @@
 		4FE78EB824279A31000D7B03 /* NightPorter */ = {
 			isa = PBXGroup;
 			children = (
+				4F35E2452459D9DA005E10A5 /* AutoLayoutViewController.swift */,
 				4FE78EB924279A31000D7B03 /* AppDelegate.swift */,
 				4FE78EBB24279A31000D7B03 /* SceneDelegate.swift */,
 				4FE78EBD24279A31000D7B03 /* ViewController.swift */,
