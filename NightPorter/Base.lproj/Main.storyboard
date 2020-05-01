@@ -80,17 +80,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="J0N-d3-byF">
-                                <rect key="frame" x="16" y="161.5" width="382" height="651.5"/>
+                                <rect key="frame" x="16" y="178.5" width="382" height="634.5"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n96-xq-0uK">
-                                <rect key="frame" x="16" y="88" width="382" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="16" y="104" width="382" height="23"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHS-c7-KLs">
-                                <rect key="frame" x="16" y="125" width="382" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="16" y="143" width="382" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -102,7 +102,7 @@
                             <constraint firstItem="J0N-d3-byF" firstAttribute="top" secondItem="fHS-c7-KLs" secondAttribute="bottom" constant="16" id="NGq-Qn-Vxf"/>
                             <constraint firstItem="fHS-c7-KLs" firstAttribute="top" secondItem="n96-xq-0uK" secondAttribute="bottom" constant="16" id="Zuq-1I-WxG"/>
                             <constraint firstItem="n96-xq-0uK" firstAttribute="leading" secondItem="RqL-PH-pLe" secondAttribute="leading" constant="16" id="b1j-Ln-Sct"/>
-                            <constraint firstItem="n96-xq-0uK" firstAttribute="top" secondItem="RqL-PH-pLe" secondAttribute="top" id="b1x-50-8NM"/>
+                            <constraint firstItem="n96-xq-0uK" firstAttribute="top" secondItem="RqL-PH-pLe" secondAttribute="top" constant="16" id="b1x-50-8NM"/>
                             <constraint firstItem="RqL-PH-pLe" firstAttribute="trailing" secondItem="fHS-c7-KLs" secondAttribute="trailing" constant="16" id="gZS-qr-sPq"/>
                             <constraint firstItem="RqL-PH-pLe" firstAttribute="trailing" secondItem="n96-xq-0uK" secondAttribute="trailing" constant="16" id="iho-Gb-Mz9"/>
                             <constraint firstItem="J0N-d3-byF" firstAttribute="bottom" secondItem="RqL-PH-pLe" secondAttribute="bottom" id="m95-2W-U1j"/>
