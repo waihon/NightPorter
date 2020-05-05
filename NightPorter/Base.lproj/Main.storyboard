@@ -56,6 +56,12 @@
                                 <rect key="frame" x="0.0" y="569" width="375" height="49"/>
                                 <items>
                                     <barButtonItem title="Dark mode" id="Bas-BJ-Gwu"/>
+                                    <barButtonItem style="plain" id="Uzn-Ck-RFI">
+                                        <switch key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="e0B-SH-gfj">
+                                            <rect key="frame" x="111" y="11.5" width="51" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </switch>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
