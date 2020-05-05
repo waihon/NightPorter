@@ -36,6 +36,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     ]
 
     @IBAction func toggleDarkMode(_ sender: Any) {
+        let mySwitch = sender as! UISwitch
+        
+        if mySwitch.isOn {
+            view.backgroundColor = UIColor.darkGray
+        } else {
+            view.backgroundColor = UIColor.white
+        }
     }
     
     // Table View Delegate Methods
