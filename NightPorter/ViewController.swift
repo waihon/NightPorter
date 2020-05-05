@@ -35,6 +35,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         Task(frequency: .monthly, title: "Test smoke alarms", subtitle: "Call fire department if not working", imageName: "smokealarm")
     ]
 
+    @IBAction func toggleDarkMode(_ sender: Any) {
+    }
+    
     // Table View Delegate Methods
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
