@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="uTx-qA-oj0">
-                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="525"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="normalCell" textLabel="fT4-qN-sgh" detailTextLabel="elW-oE-vGJ" style="IBUITableViewCellStyleSubtitle" id="VXc-XI-aR5">
@@ -52,9 +52,8 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="saO-4s-ckn"/>
                                 </connections>
                             </tableView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mKh-wm-NgT">
-                                <rect key="frame" x="0.0" y="574" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mKh-wm-NgT">
+                                <rect key="frame" x="0.0" y="569" width="375" height="49"/>
                                 <items>
                                     <barButtonItem title="Item" id="Bas-BJ-Gwu"/>
                                 </items>
@@ -62,9 +61,12 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uTx-qA-oj0" secondAttribute="bottom" id="SKF-tg-4VG"/>
                             <constraint firstItem="uTx-qA-oj0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Vdt-4h-6jU"/>
+                            <constraint firstItem="mKh-wm-NgT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aHZ-VT-ccM"/>
+                            <constraint firstItem="mKh-wm-NgT" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="aWL-sa-vlY"/>
+                            <constraint firstItem="mKh-wm-NgT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bXP-7F-clE"/>
                             <constraint firstItem="uTx-qA-oj0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="exb-27-54a"/>
+                            <constraint firstItem="mKh-wm-NgT" firstAttribute="top" secondItem="uTx-qA-oj0" secondAttribute="bottom" id="q5m-E0-xRZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uTx-qA-oj0" secondAttribute="trailing" id="yMd-Nv-T2G"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
