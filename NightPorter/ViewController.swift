@@ -54,6 +54,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     // Table View Data Source Methods
     
     func numberOfSections(in tableView: UITableView) -> Int {
+        tableView.backgroundColor = UIColor.clear
         return 3
     }
     
@@ -94,6 +95,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.detailTextLabel?.text = tasksArray?[indexPath.row].subtitle
         cell.imageView?.image = imageView
         cell.accessoryType = .disclosureIndicator
+        
+        cell.backgroundColor = UIColor.clear
         
         return cell
     }
