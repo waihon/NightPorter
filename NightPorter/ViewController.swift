@@ -91,10 +91,20 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             imageView = nil
         }
 
-        cell.textLabel?.text = tasksArray?[indexPath.row].title
-        cell.detailTextLabel?.text = tasksArray?[indexPath.row].subtitle
+        let currentTask: Task! = tasksArray?[indexPath.row]
+        cell.textLabel?.text = currentTask.title
+        cell.detailTextLabel?.text = currentTask.subtitle
         cell.imageView?.image = imageView
-        cell.accessoryType = .disclosureIndicator
+        
+        if currentTask.completed {
+            cell.textLabel?.textColor = UIColor.lightGray
+            cell.detailTextLabel?.textColor = UIColor.lightGray
+            cell.accessoryType = .checkmark
+        } else {
+            cell.textLabel?.textColor = UIColor.black
+            cell.detailTextLabel?.textColor = UIColor.black
+            cell.accessoryType = .disclosureIndicator
+        }
         
         cell.backgroundColor = UIColor.clear
         
