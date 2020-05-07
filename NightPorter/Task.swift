@@ -19,11 +19,14 @@ class Task: NSObject {
     var title: String
     var subtitle: String
     var imageName: String
+    var completed: Bool
+    var lastCompleted: NSDate?
     
-    init(frequency: Frequency, title: String, subtitle: String, imageName: String) {
+    init(frequency: Frequency, title: String, subtitle: String, imageName: String, completed: Bool) {
         self.frequency = frequency
         self.title = title
         self.subtitle = subtitle
         self.imageName = imageName
+        self.completed = completed
     }
 }
