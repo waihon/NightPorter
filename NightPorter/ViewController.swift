@@ -50,6 +50,28 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("You selected row \(indexPath.row) in section \(indexPath.section)")
     }
+
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let completeAction = UIContextualAction(style: .normal, title: "Complete") { (action: UIContextualAction, sourceView: UIView, actionPerformed: (Bool) -> Void) in
+            // Find the right task and set it to completed
+            switch indexPath.section {
+            case 0:
+                self.dailyTasks[indexPath.row].completed = true
+            case 1:
+                self.weeklyTasks[indexPath.row].completed = true
+            case 2:
+                self.monthlyTasks[indexPath.row].completed = true
+            default:
+                break
+            }
+            
+            tableView.reloadData()
+            
+            actionPerformed(true)
+        }
+        
+        return UISwipeActionsConfiguration(actions: [completeAction])
+    }
     
     // Table View Data Source Methods
     
