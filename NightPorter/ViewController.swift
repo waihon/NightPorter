@@ -47,19 +47,34 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     @IBAction func resetList(_ sender: Any) {
-        for i in 0..<self.dailyTasks.count {
-            self.dailyTasks[i].completed = false
+        let confirm = UIAlertController(title: "Alert", message: "Really reset the list?", preferredStyle: .alert)
+        
+        let yesAction = UIAlertAction(title: "Yes", style: .destructive) {
+            action in
+            for i in 0..<self.dailyTasks.count {
+                self.dailyTasks[i].completed = false
+            }
+            
+            for i in 0..<self.weeklyTasks.count {
+                self.weeklyTasks[i].completed = false
+            }
+            
+            for i in 0..<self.monthlyTasks.count {
+                self.monthlyTasks[i].completed = false
+            }
+            
+            self.tasksTableView.reloadData()
         }
         
-        for i in 0..<self.weeklyTasks.count {
-            self.weeklyTasks[i].completed = false
+        let noAction = UIAlertAction(title: "No", style: .cancel) {
+            action in
+            print("That was a close one!")
         }
         
-        for i in 0..<self.monthlyTasks.count {
-            self.monthlyTasks[i].completed = false
-        }
+        confirm.addAction(yesAction)
+        confirm.addAction(noAction)
         
-        tasksTableView.reloadData()
+        present(confirm, animated: true, completion: nil)
     }
     
     // Table View Delegate Methods
