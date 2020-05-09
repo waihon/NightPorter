@@ -47,6 +47,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     @IBAction func resetList(_ sender: Any) {
+        for i in 0..<self.dailyTasks.count {
+            self.dailyTasks[i].completed = false
+        }
+        
+        for i in 0..<self.weeklyTasks.count {
+            self.weeklyTasks[i].completed = false
+        }
+        
+        for i in 0..<self.monthlyTasks.count {
+            self.monthlyTasks[i].completed = false
+        }
+        
+        tasksTableView.reloadData()
     }
     
     // Table View Delegate Methods
