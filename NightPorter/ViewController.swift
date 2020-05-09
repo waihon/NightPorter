@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tasksTableView: UITableView!
     
     // Create array of tasks by frequency
     let dailyTasks: [Task] = [
