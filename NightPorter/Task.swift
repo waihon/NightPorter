@@ -22,7 +22,7 @@ class Task: NSObject {
     var completed: Bool
     var lastCompleted: NSDate?
     
-    init(frequency: Frequency, title: String, subtitle: String, imageName: String, completed: Bool) {
+    init(frequency: Frequency, title: String, subtitle: String, imageName: String, completed: Bool = false) {
         self.frequency = frequency
         self.title = title
         self.subtitle = subtitle
