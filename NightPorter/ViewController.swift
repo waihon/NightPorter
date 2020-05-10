@@ -85,18 +85,30 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
 
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let completeAction = UIContextualAction(style: .normal, title: "Complete") { (action: UIContextualAction, sourceView: UIView, actionPerformed: (Bool) -> Void) in
-            // Find the right task and set it to completed
-            switch indexPath.section {
-            case 0:
-                self.dailyTasks[indexPath.row].completed = true
-            case 1:
-                self.weeklyTasks[indexPath.row].completed = true
-            case 2:
-                self.monthlyTasks[indexPath.row].completed = true
-            default:
-                break
-            }
+        var task: Task?
+        // Find the right task being swiped
+        switch indexPath.section {
+        case Frequency.daily.rawValue:
+            task = self.dailyTasks[indexPath.row]
+        case Frequency.weekly.rawValue:
+            task = self.weeklyTasks[indexPath.row]
+        case Frequency.monthly.rawValue:
+            task = self.monthlyTasks[indexPath.row]
+        default:
+            task = nil
+        }
+        
+        guard let currentTask = task else {
+            return nil
+        }
+        
+        guard !currentTask.completed else {
+            return nil
+        }
+        
+        let completeAction = UIContextualAction(style: .normal, title: "Complete") {
+            (action: UIContextualAction, sourceView: UIView, actionPerformed: (Bool) -> Void) in
+            currentTask.completed = true
             
             tableView.reloadData()
             
