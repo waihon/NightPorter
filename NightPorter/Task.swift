@@ -9,9 +9,9 @@
 import Foundation
 
 enum Frequency: Int {
-    case daily = 0
-    case weekly = 1
-    case monthly = 2
+    case daily
+    case weekly
+    case monthly
 }
 
 class Task: NSObject {
