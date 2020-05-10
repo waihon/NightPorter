@@ -201,23 +201,31 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        var tasks: [Task]?
-        if let indexPath = self.tableView.indexPathForSelectedRow {
-            switch indexPath.section {
-            case Frequency.daily.rawValue:
-                tasks = dailyTasks
-            case Frequency.weekly.rawValue:
-                tasks = weeklyTasks
-            case Frequency.monthly.rawValue:
-                tasks = monthlyTasks
-            default:
-                tasks = nil
-            }
-            if tasks != nil {
-                let detailViewController = segue.destination as! DetailViewController
-                detailViewController.currentTask = tasks![indexPath.row]
-            }
+        guard let indexPath = self.tableView.indexPathForSelectedRow else {
+            return
         }
+        
+        var tasks: [Task]?
+        switch indexPath.section {
+        case Frequency.daily.rawValue:
+            tasks = dailyTasks
+        case Frequency.weekly.rawValue:
+            tasks = weeklyTasks
+        case Frequency.monthly.rawValue:
+            tasks = monthlyTasks
+        default:
+            tasks = nil
+        }
+        
+        guard let currentTask = tasks?[indexPath.row] else {
+            return
+        }
+        
+        // Get the new view controller using segue.destination.
+        let detailViewController = segue.destination as! DetailViewController
+
+        // Pass the selected object to the new view controller.
+        detailViewController.currentTask = currentTask
     }
 }
 
