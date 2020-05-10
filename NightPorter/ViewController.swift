@@ -158,7 +158,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             imageView = nil
         }
 
-        let currentTask: Task! = tasksArray?[indexPath.row]
+        guard let currentTask = tasksArray?[indexPath.row] else {
+            return cell
+        }
+        
         cell.textLabel?.text = currentTask.title
         cell.detailTextLabel?.text = currentTask.subtitle
         cell.imageView?.image = imageView
