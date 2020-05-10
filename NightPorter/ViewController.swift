@@ -127,11 +127,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
-        case 0:
+        case Frequency.daily.rawValue:
             return dailyTasks.count
-        case 1:
+        case Frequency.weekly.rawValue:
             return weeklyTasks.count
-        case 2:
+        case Frequency.monthly.rawValue:
             return monthlyTasks.count
         default:
             return 0
@@ -144,13 +144,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let imageView: UIImage?
         
         switch indexPath.section {
-        case 0:
+        case Frequency.daily.rawValue:
             tasksArray = dailyTasks
             imageView = UIImage(named: "dailyTask")!
-        case 1:
+        case Frequency.weekly.rawValue:
             tasksArray = weeklyTasks
             imageView = UIImage(named: "weeklyTask")!
-        case 2:
+        case Frequency.monthly.rawValue:
             tasksArray = monthlyTasks
             imageView = UIImage(named: "monthlyTask")!
         default:
@@ -180,11 +180,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
-        case 0:
+        case Frequency.daily.rawValue:
             return "Daily Tasks"
-        case 1:
+        case Frequency.weekly.rawValue:
             return "Weekly Tasks"
-        case 2:
+        case Frequency.monthly.rawValue:
             return "Monthly Tasks"
         default:
             return nil
