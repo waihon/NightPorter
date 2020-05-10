@@ -15,25 +15,25 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     // Create array of tasks by frequency
     let dailyTasks: [Task] = [
-        Task(frequency: .daily, title: "Check all windows", subtitle: "Windows must be closed", imageName: "windows", completed: false),
-        Task(frequency: .daily, title: "Check all doors", subtitle: "Doors must be locked", imageName: "door", completed: false),
-        Task(frequency: .daily, title: "Is the boiler fueled?", subtitle: "Refill fuel if below 30%", imageName: "boiler", completed: false),
-        Task(frequency: .daily, title: "Check the mailbox", subtitle: "Collect any mail", imageName: "mailbox", completed: false),
-        Task(frequency: .daily, title: "Empty trash containers", subtitle: "Wash the containers as well", imageName: "trashcontainer", completed: false),
-        Task(frequency: .daily, title: "If freezing, check water pipes", subtitle: "Ensure water flows", imageName: "waterpipes", completed: false),
-        Task(frequency: .daily, title: "Document \"strange & unusual\" occurrences", subtitle: "Capture with date & time", imageName: "notebook", completed: false)
+        Task(frequency: .daily, title: "Check all windows", subtitle: "Windows must be closed", imageName: "windows"),
+        Task(frequency: .daily, title: "Check all doors", subtitle: "Doors must be locked", imageName: "door"),
+        Task(frequency: .daily, title: "Is the boiler fueled?", subtitle: "Refill fuel if below 30%", imageName: "boiler"),
+        Task(frequency: .daily, title: "Check the mailbox", subtitle: "Collect any mail", imageName: "mailbox"),
+        Task(frequency: .daily, title: "Empty trash containers", subtitle: "Wash the containers as well", imageName: "trashcontainer"),
+        Task(frequency: .daily, title: "If freezing, check water pipes", subtitle: "Ensure water flows", imageName: "waterpipes"),
+        Task(frequency: .daily, title: "Document \"strange & unusual\" occurrences", subtitle: "Capture with date & time", imageName: "notebook")
     ]
 
     let weeklyTasks: [Task] = [
-        Task(frequency: .weekly, title: "Check inside all cabins", subtitle: "Bring along cabin keys", imageName: "cabins", completed: false),
-        Task(frequency: .weekly, title: "Flush all lavatories in cabins", subtitle: "Close the door of lavatories", imageName: "lavatory", completed: false),
-        Task(frequency: .weekly, title: "Walk the perimeter of property", subtitle: "Bring along torch light", imageName: "perimeter", completed: false)
+        Task(frequency: .weekly, title: "Check inside all cabins", subtitle: "Bring along cabin keys", imageName: "cabins"),
+        Task(frequency: .weekly, title: "Flush all lavatories in cabins", subtitle: "Close the door of lavatories", imageName: "lavatory"),
+        Task(frequency: .weekly, title: "Walk the perimeter of property", subtitle: "Bring along torch light", imageName: "perimeter")
     ]
 
     let monthlyTasks: [Task] = [
-        Task(frequency: .monthly, title: "Test security alarm", subtitle: "Call security firm if not working", imageName: "securityalarm", completed: false),
-        Task(frequency: .monthly, title: "Test motion detectors", subtitle: "Call security firm if not working", imageName: "motiondetector", completed: false),
-        Task(frequency: .monthly, title: "Test smoke alarms", subtitle: "Call fire department if not working", imageName: "smokealarm", completed: false)
+        Task(frequency: .monthly, title: "Test security alarm", subtitle: "Call security firm if not working", imageName: "securityalarm"),
+        Task(frequency: .monthly, title: "Test motion detectors", subtitle: "Call security firm if not working", imageName: "motiondetector"),
+        Task(frequency: .monthly, title: "Test smoke alarms", subtitle: "Call fire department if not working", imageName: "smokealarm")
     ]
 
     @IBAction func toggleDarkMode(_ sender: Any) {
