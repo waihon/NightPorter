@@ -101,21 +101,24 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         guard let currentTask = task else {
             return nil
         }
-        
-        guard !currentTask.completed else {
-            return nil
+                
+        let title: String
+        if currentTask.completed {
+            title = "To Do"
+        } else {
+            title = "Complete"
         }
         
-        let completeAction = UIContextualAction(style: .normal, title: "Complete") {
+        let action = UIContextualAction(style: .normal, title: title) {
             (action: UIContextualAction, sourceView: UIView, actionPerformed: (Bool) -> Void) in
-            currentTask.completed = true
+            currentTask.completed = !currentTask.completed
             
             tableView.reloadData()
             
             actionPerformed(true)
         }
         
-        return UISwipeActionsConfiguration(actions: [completeAction])
+        return UISwipeActionsConfiguration(actions: [action])
     }
     
     // Table View Data Source Methods
