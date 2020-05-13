@@ -301,7 +301,7 @@
             </objects>
             <point key="canvasLocation" x="1265" y="457"/>
         </scene>
-        <!--Item-->
+        <!--Old Phone-->
         <scene sceneID="vlM-rn-kLX">
             <objects>
                 <viewController id="Avf-G5-jlV" customClass="PhoneViewController" customModule="NightPorter" customModuleProvider="target" sceneMemberID="viewController">
@@ -311,7 +311,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="bK6-AC-BC0"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="E1J-ba-D8F"/>
+                    <tabBarItem key="tabBarItem" title="Old Phone" image="phone" catalog="system" id="E1J-ba-D8F"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s9Q-ZB-WEg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -361,6 +361,7 @@
     <resources>
         <image name="calendar" catalog="system" width="64" height="52"/>
         <image name="doc.richtext" catalog="system" width="56" height="64"/>
+        <image name="phone" catalog="system" width="64" height="56"/>
         <image name="profile" width="250" height="250"/>
         <image name="square.and.pencil" catalog="system" width="64" height="58"/>
     </resources>
