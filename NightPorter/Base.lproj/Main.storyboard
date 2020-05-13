@@ -301,6 +301,21 @@
             </objects>
             <point key="canvasLocation" x="3327.1999999999998" y="121.88905547226388"/>
         </scene>
+        <!--Phone View Controller-->
+        <scene sceneID="vlM-rn-kLX">
+            <objects>
+                <viewController id="Avf-G5-jlV" customClass="PhoneViewController" customModule="NightPorter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Ev-fI-esl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="bK6-AC-BC0"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s9Q-ZB-WEg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3991" y="122"/>
+        </scene>
         <!--Night Porter-->
         <scene sceneID="ZJu-dO-Owk">
             <objects>
