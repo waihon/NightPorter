@@ -10,6 +10,8 @@ import UIKit
 
 class PhoneViewController: UIViewController {
 
+    @IBOutlet weak var phoneNameLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

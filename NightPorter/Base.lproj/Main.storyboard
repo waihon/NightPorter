@@ -313,7 +313,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1937 Desk Phone" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z67-Wg-dag">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z67-Wg-dag">
                                 <rect key="frame" x="16" y="48" width="343" height="68"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68" id="GZv-8Y-IcE"/>
@@ -339,6 +339,9 @@
                         <viewLayoutGuide key="safeArea" id="bK6-AC-BC0"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Old Phone" image="phone" catalog="system" id="E1J-ba-D8F"/>
+                    <connections>
+                        <outlet property="phoneNameLabel" destination="Z67-Wg-dag" id="8y9-Eh-jCz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s9Q-ZB-WEg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
