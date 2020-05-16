@@ -11,6 +11,7 @@ import UIKit
 class PhoneViewController: UIViewController {
 
     @IBOutlet weak var phoneNameLabel: UILabel!
+    @IBOutlet weak var phoneImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
