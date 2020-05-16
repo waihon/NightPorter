@@ -32,4 +32,6 @@ class PhoneViewController: UIViewController {
     }
     */
 
+    @IBAction func addToCartPressed(_ sender: Any) {
+    }
 }
