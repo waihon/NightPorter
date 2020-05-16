@@ -16,6 +16,7 @@ class PhoneViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        phoneNameLabel.text = "1937 Desk Phone"
     }
     
 
