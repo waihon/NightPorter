@@ -33,5 +33,6 @@ class PhoneViewController: UIViewController {
     */
 
     @IBAction func addToCartPressed(_ sender: Any) {
+        print("Button tapped")
     }
 }
