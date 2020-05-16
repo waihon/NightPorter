@@ -320,13 +320,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENR-uo-HNH">
-                                <rect key="frame" x="108" y="163" width="159" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENR-uo-HNH">
+                                <rect key="frame" x="16" y="163" width="343" height="41"/>
                                 <state key="normal" image="button-addtocart"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bK6-AC-BC0" firstAttribute="trailing" secondItem="ENR-uo-HNH" secondAttribute="trailing" constant="16" id="NbF-Do-HG4"/>
+                            <constraint firstItem="ENR-uo-HNH" firstAttribute="leading" secondItem="bK6-AC-BC0" secondAttribute="leading" constant="16" id="i00-qe-rOu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bK6-AC-BC0"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Old Phone" image="phone" catalog="system" id="E1J-ba-D8F"/>
