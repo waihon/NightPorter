@@ -313,8 +313,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="1937 Desk Phone" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z67-Wg-dag">
-                                <rect key="frame" x="16" y="45" width="343" height="68"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1937 Desk Phone" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z67-Wg-dag">
+                                <rect key="frame" x="16" y="48" width="343" height="68"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68" id="GZv-8Y-IcE"/>
                                 </constraints>
@@ -322,15 +322,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENR-uo-HNH">
-                                <rect key="frame" x="16" y="163" width="343" height="41"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENR-uo-HNH">
+                                <rect key="frame" x="16" y="164" width="343" height="41"/>
                                 <state key="normal" image="button-addtocart"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="bK6-AC-BC0" firstAttribute="trailing" secondItem="Z67-Wg-dag" secondAttribute="trailing" constant="16" id="C76-Sp-qME"/>
+                            <constraint firstItem="Z67-Wg-dag" firstAttribute="leading" secondItem="bK6-AC-BC0" secondAttribute="leading" constant="16" id="GkQ-f1-v0w"/>
                             <constraint firstItem="bK6-AC-BC0" firstAttribute="trailing" secondItem="ENR-uo-HNH" secondAttribute="trailing" constant="16" id="NbF-Do-HG4"/>
+                            <constraint firstItem="Z67-Wg-dag" firstAttribute="top" secondItem="bK6-AC-BC0" secondAttribute="top" constant="48" id="QLd-Vv-3ea"/>
                             <constraint firstItem="ENR-uo-HNH" firstAttribute="leading" secondItem="bK6-AC-BC0" secondAttribute="leading" constant="16" id="i00-qe-rOu"/>
+                            <constraint firstItem="ENR-uo-HNH" firstAttribute="top" secondItem="Z67-Wg-dag" secondAttribute="bottom" constant="48" id="iP7-lv-yMF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bK6-AC-BC0"/>
                     </view>
