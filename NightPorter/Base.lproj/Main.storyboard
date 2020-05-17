@@ -351,7 +351,7 @@
             </objects>
             <point key="canvasLocation" x="2144.8000000000002" y="456.52173913043481"/>
         </scene>
-        <!--Contact Us View Controller-->
+        <!--Item-->
         <scene sceneID="JrD-DR-lQh">
             <objects>
                 <viewController id="Xgt-jc-Utr" customClass="ContactUsViewController" customModule="NightPorter" customModuleProvider="target" sceneMemberID="viewController">
@@ -361,6 +361,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="BGi-mS-W2M"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="w2R-2c-dFw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BQh-MH-H1r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -400,6 +401,7 @@
                         <segue destination="D8k-0M-Gqh" kind="relationship" relationship="viewControllers" id="fi3-vu-YI5"/>
                         <segue destination="YPj-h0-Kgr" kind="relationship" relationship="viewControllers" id="u6R-4d-hFj"/>
                         <segue destination="Avf-G5-jlV" kind="relationship" relationship="viewControllers" id="b14-c8-mk7"/>
+                        <segue destination="Xgt-jc-Utr" kind="relationship" relationship="viewControllers" id="td3-a9-cvS"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WRc-og-clk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
