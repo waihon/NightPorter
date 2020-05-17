@@ -351,7 +351,7 @@
             </objects>
             <point key="canvasLocation" x="2144.8000000000002" y="456.52173913043481"/>
         </scene>
-        <!--Item-->
+        <!--Contact Us-->
         <scene sceneID="JrD-DR-lQh">
             <objects>
                 <viewController id="Xgt-jc-Utr" customClass="ContactUsViewController" customModule="NightPorter" customModuleProvider="target" sceneMemberID="viewController">
@@ -361,7 +361,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="BGi-mS-W2M"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="w2R-2c-dFw"/>
+                    <tabBarItem key="tabBarItem" title="Contact Us" selectedImage="pencil.and.outline" catalog="system" id="w2R-2c-dFw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BQh-MH-H1r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -413,6 +413,7 @@
         <image name="button-addtocart" width="158.5" height="41"/>
         <image name="calendar" catalog="system" width="64" height="52"/>
         <image name="doc.richtext" catalog="system" width="56" height="64"/>
+        <image name="pencil.and.outline" catalog="system" width="64" height="58"/>
         <image name="phone" catalog="system" width="64" height="56"/>
         <image name="profile" width="250" height="250"/>
         <image name="square.and.pencil" catalog="system" width="64" height="58"/>
