@@ -362,6 +362,9 @@
                         <viewLayoutGuide key="safeArea" id="BGi-mS-W2M"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Contact Us" selectedImage="pencil.and.outline" catalog="system" id="w2R-2c-dFw"/>
+                    <connections>
+                        <outlet property="scrollView" destination="53U-pw-vee" id="BoY-rd-DuT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BQh-MH-H1r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="53U-pw-vee">
