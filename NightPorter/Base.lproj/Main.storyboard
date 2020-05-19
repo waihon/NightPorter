@@ -365,11 +365,23 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header-contact" translatesAutoresizingMaskIntoConstraints="NO" id="Bak-P9-4f0">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONTACT US" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvP-ix-6aI">
+                                        <rect key="frame" x="8" y="157" width="359" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="eib-S0-MQF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DamascusBold" family="Damascus" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Bak-P9-4f0" firstAttribute="leading" secondItem="53U-pw-vee" secondAttribute="leading" id="6Rj-dl-cfv"/>
+                                    <constraint firstAttribute="trailing" secondItem="xvP-ix-6aI" secondAttribute="trailing" constant="8" id="7rS-m0-OHL"/>
+                                    <constraint firstItem="xvP-ix-6aI" firstAttribute="top" secondItem="Bak-P9-4f0" secondAttribute="bottom" constant="32" id="Pey-eK-c4a"/>
                                     <constraint firstItem="Bak-P9-4f0" firstAttribute="top" secondItem="53U-pw-vee" secondAttribute="top" id="d8C-x0-KBr"/>
                                     <constraint firstAttribute="trailing" secondItem="Bak-P9-4f0" secondAttribute="trailing" id="hKj-mq-yiH"/>
+                                    <constraint firstItem="xvP-ix-6aI" firstAttribute="leading" secondItem="53U-pw-vee" secondAttribute="leading" constant="8" id="kWS-CB-49m"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="KH3-8a-miE"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="Pi5-74-ber"/>
