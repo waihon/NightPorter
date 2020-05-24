@@ -363,6 +363,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Contact Us" selectedImage="pencil.and.outline" catalog="system" id="w2R-2c-dFw"/>
                     <connections>
+                        <outlet property="contentView" destination="WiY-4s-cCx" id="HF7-Cr-2vR"/>
                         <outlet property="scrollView" destination="oaU-Af-HeA" id="B76-nQ-X2D"/>
                     </connections>
                 </viewController>
