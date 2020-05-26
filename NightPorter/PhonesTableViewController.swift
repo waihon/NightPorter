@@ -31,6 +31,7 @@ class PhonesTableViewController: UITableViewController {
 
         // Configure the cell...
         cell.textLabel?.text = "1937 Desk Phone"
+        cell.imageView?.image = UIImage(named: "image-cell1")
 
         return cell
     }
