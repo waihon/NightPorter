@@ -316,6 +316,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Avf-G5-jlV" kind="show" id="dmU-6d-Z0J"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -359,7 +362,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z67-Wg-dag">
-                                <rect key="frame" x="16" y="48" width="343" height="68"/>
+                                <rect key="frame" x="16" y="92" width="343" height="68"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68" id="GZv-8Y-IcE"/>
                                 </constraints>
@@ -368,7 +371,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENR-uo-HNH">
-                                <rect key="frame" x="16" y="164" width="343" height="41"/>
+                                <rect key="frame" x="16" y="208" width="343" height="41"/>
                                 <state key="normal" image="button-addtocart"/>
                                 <connections>
                                     <action selector="addToCartPressed:" destination="Avf-G5-jlV" eventType="touchUpInside" id="Hd4-2Z-wQ9"/>
@@ -387,6 +390,7 @@
                         <viewLayoutGuide key="safeArea" id="bK6-AC-BC0"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Old Phone" image="phone" catalog="system" id="E1J-ba-D8F"/>
+                    <navigationItem key="navigationItem" id="L35-3F-9LF"/>
                     <connections>
                         <outlet property="phoneImageView" destination="zke-Jr-Sbn" id="qRu-b4-dwJ"/>
                         <outlet property="phoneNameLabel" destination="Z67-Wg-dag" id="8y9-Eh-jCz"/>
@@ -394,7 +398,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s9Q-ZB-WEg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3578" y="457"/>
+            <point key="canvasLocation" x="3759" y="458"/>
         </scene>
         <!--Contact Us-->
         <scene sceneID="JrD-DR-lQh">
