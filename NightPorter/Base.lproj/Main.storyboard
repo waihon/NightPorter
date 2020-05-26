@@ -301,7 +301,7 @@
             </objects>
             <point key="canvasLocation" x="1265" y="457"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Table View Controller-->
         <scene sceneID="wtk-V2-fEI">
             <objects>
                 <tableViewController id="ZPo-tf-qtw" sceneMemberID="viewController">
@@ -324,7 +324,7 @@
                             <outlet property="delegate" destination="ZPo-tf-qtw" id="QKS-r3-1Of"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="fs9-gd-gAf"/>
+                    <navigationItem key="navigationItem" id="fs9-gd-gAf"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G0F-m2-gUe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
