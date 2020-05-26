@@ -10,7 +10,6 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var tasksTableView: UITableView!
     
     // Create array of tasks by frequency
@@ -204,7 +203,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let indexPath = self.tableView.indexPathForSelectedRow else {
+        guard let indexPath = self.tasksTableView.indexPathForSelectedRow else {
             return
         }
         
