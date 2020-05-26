@@ -36,6 +36,12 @@ class PhonesTableViewController: UITableViewController {
         return cell
     }
 
+    // The row height set for the prototype cell seemed not recognized.
+    // So, set it programmatically during runtime.
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100.0
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
