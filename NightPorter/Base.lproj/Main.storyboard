@@ -300,10 +300,10 @@
             </objects>
             <point key="canvasLocation" x="1265" y="457"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Phones Table View Controller-->
         <scene sceneID="wtk-V2-fEI">
             <objects>
-                <tableViewController id="ZPo-tf-qtw" sceneMemberID="viewController">
+                <tableViewController id="ZPo-tf-qtw" customClass="PhonesTableViewController" customModule="NightPorter" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cEO-lW-xcA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

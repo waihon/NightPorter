@@ -10,6 +10,7 @@
 		4F35E2462459D9DA005E10A5 /* AutoLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F35E2452459D9DA005E10A5 /* AutoLayoutViewController.swift */; };
 		4F535EEB247105000022519B /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F535EEA247105000022519B /* ContactUsViewController.swift */; };
 		4F729DA9243103A300F5624A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F729DA8243103A300F5624A /* DetailViewController.swift */; };
+		4F9CE0AC247D1C7700F03F84 /* PhonesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9CE0AB247D1C7700F03F84 /* PhonesTableViewController.swift */; };
 		4FA2243E246C4DFB003EFDE3 /* PhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA2243D246C4DFB003EFDE3 /* PhoneViewController.swift */; };
 		4FBE3479245C869F00624DDB /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBE3478245C869F00624DDB /* StackViewController.swift */; };
 		4FDF584C24389897004CB49B /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF584B24389897004CB49B /* Task.swift */; };
@@ -25,6 +26,7 @@
 		4F35E2452459D9DA005E10A5 /* AutoLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutViewController.swift; sourceTree = "<group>"; };
 		4F535EEA247105000022519B /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
 		4F729DA8243103A300F5624A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		4F9CE0AB247D1C7700F03F84 /* PhonesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonesTableViewController.swift; sourceTree = "<group>"; };
 		4FA2243D246C4DFB003EFDE3 /* PhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneViewController.swift; sourceTree = "<group>"; };
 		4FBE3478245C869F00624DDB /* StackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
 		4FDF584B24389897004CB49B /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				4FE78EC224279A34000D7B03 /* Assets.xcassets */,
 				4FE78EC424279A34000D7B03 /* LaunchScreen.storyboard */,
 				4FE78EC724279A34000D7B03 /* Info.plist */,
+				4F9CE0AB247D1C7700F03F84 /* PhonesTableViewController.swift */,
 			);
 			path = NightPorter;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 			files = (
 				4FE78EBE24279A31000D7B03 /* ViewController.swift in Sources */,
 				4FE78EBA24279A31000D7B03 /* AppDelegate.swift in Sources */,
+				4F9CE0AC247D1C7700F03F84 /* PhonesTableViewController.swift in Sources */,
 				4FDF584C24389897004CB49B /* Task.swift in Sources */,
 				4FBE3479245C869F00624DDB /* StackViewController.swift in Sources */,
 				4FE78EBC24279A31000D7B03 /* SceneDelegate.swift in Sources */,
