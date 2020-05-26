@@ -20,6 +20,11 @@ class ContactUsViewController: UIViewController {
         view.addSubview(scrollView)
     }
     
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        
+        scrollView.contentSize = CGSize(width: contentView.frame.width, height: contentView.frame.height)
+    }
 
     /*
     // MARK: - Navigation
