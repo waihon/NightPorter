@@ -317,7 +317,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Avf-G5-jlV" kind="show" id="dmU-6d-Z0J"/>
+                                    <segue destination="Avf-G5-jlV" kind="show" identifier="ShowPhone" id="dmU-6d-Z0J"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
