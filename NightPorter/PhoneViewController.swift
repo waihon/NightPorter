@@ -12,12 +12,14 @@ class PhoneViewController: UIViewController {
 
     @IBOutlet weak var phoneNameLabel: UILabel!
     @IBOutlet weak var phoneImageView: UIImageView!
+
+    var phoneName: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        phoneNameLabel.text = "1937 Desk Phone"
+        phoneNameLabel.text = phoneName
         phoneImageView.image = UIImage(named: "phone-fullscreen3")
     }
     
