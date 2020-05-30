@@ -10,7 +10,7 @@ import UIKit
 
 class PhonesTableViewController: UITableViewController {
 
-    var productNames: [String]?
+    var phoneNames: [String]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +21,7 @@ class PhonesTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
-        productNames = [
+        phoneNames = [
             "1907 Wall Set",
             "1921 Dial Phone",
             "1937 Desk Set",
@@ -32,15 +32,15 @@ class PhonesTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return productNames?.count ?? 0
+        return phoneNames?.count ?? 0
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PhoneCell", for: indexPath)
 
         // Configure the cell...
-        if let productName = productNames?[indexPath.row] {
-            cell.textLabel?.text = productName
+        if let phoneName = phoneNames?[indexPath.row] {
+            cell.textLabel?.text = phoneName
         }
         cell.imageView?.image = UIImage(named: "image-cell1")
 
