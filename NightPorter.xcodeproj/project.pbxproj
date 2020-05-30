@@ -70,20 +70,20 @@
 		4FE78EB824279A31000D7B03 /* NightPorter */ = {
 			isa = PBXGroup;
 			children = (
-				4F35E2452459D9DA005E10A5 /* AutoLayoutViewController.swift */,
 				4FE78EB924279A31000D7B03 /* AppDelegate.swift */,
-				4FE78EBB24279A31000D7B03 /* SceneDelegate.swift */,
-				4FE78EBD24279A31000D7B03 /* ViewController.swift */,
-				4FE78EBF24279A31000D7B03 /* Main.storyboard */,
+				4FE78EC224279A34000D7B03 /* Assets.xcassets */,
+				4F35E2452459D9DA005E10A5 /* AutoLayoutViewController.swift */,
 				4F535EEA247105000022519B /* ContactUsViewController.swift */,
+				4F729DA8243103A300F5624A /* DetailViewController.swift */,
+				4FE78EC724279A34000D7B03 /* Info.plist */,
+				4FE78EC424279A34000D7B03 /* LaunchScreen.storyboard */,
+				4FE78EBF24279A31000D7B03 /* Main.storyboard */,
+				4F9CE0AB247D1C7700F03F84 /* PhonesTableViewController.swift */,
 				4FA2243D246C4DFB003EFDE3 /* PhoneViewController.swift */,
+				4FE78EBB24279A31000D7B03 /* SceneDelegate.swift */,
 				4FBE3478245C869F00624DDB /* StackViewController.swift */,
 				4FDF584B24389897004CB49B /* Task.swift */,
-				4F729DA8243103A300F5624A /* DetailViewController.swift */,
-				4FE78EC224279A34000D7B03 /* Assets.xcassets */,
-				4FE78EC424279A34000D7B03 /* LaunchScreen.storyboard */,
-				4FE78EC724279A34000D7B03 /* Info.plist */,
-				4F9CE0AB247D1C7700F03F84 /* PhonesTableViewController.swift */,
+				4FE78EBD24279A31000D7B03 /* ViewController.swift */,
 			);
 			path = NightPorter;
 			sourceTree = "<group>";
