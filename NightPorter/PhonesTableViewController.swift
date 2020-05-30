@@ -39,7 +39,9 @@ class PhonesTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PhoneCell", for: indexPath)
 
         // Configure the cell...
-        cell.textLabel?.text = "1937 Desk Phone"
+        if let productName = productNames?[indexPath.row] {
+            cell.textLabel?.text = productName
+        }
         cell.imageView?.image = UIImage(named: "image-cell1")
 
         return cell
