@@ -10,6 +10,8 @@ import UIKit
 
 class PhonesTableViewController: UITableViewController {
 
+    var productNames: [String]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +20,13 @@ class PhonesTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        productNames = [
+            "1907 Wall Set",
+            "1921 Dial Phone",
+            "1937 Desk Set",
+            "1984 Motorola Portable"
+        ]
     }
 
     // MARK: - Table view data source
