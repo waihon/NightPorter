@@ -95,12 +95,14 @@ class PhonesTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard segue.identifier == "ShowPhone",
             // Get the new view controller using segue.destination.
-            let phoneViewController = segue.destination as? PhoneViewController else {
+            let phoneViewController = segue.destination as? PhoneViewController,
+            let cell = sender as? UITableViewCell,
+            let indexPath = tableView.indexPath(for: cell) else {
             return
         }
 
         // Pass the selected object to the new view controller.
-        phoneViewController.phoneName = "Really Old Phone"
+        phoneViewController.phoneName = phoneNames?[indexPath.row]
     }
 
 }
