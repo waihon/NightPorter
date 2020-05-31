@@ -10,7 +10,7 @@ import UIKit
 
 class PhonesTableViewController: UITableViewController {
 
-    var phoneNames: [String]?
+    var phones: [Phone]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,28 +21,33 @@ class PhonesTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
-        phoneNames = [
-            "1907 Wall Set",
-            "1921 Dial Phone",
-            "1937 Desk Set",
-            "1984 Motorola Portable"
-        ]
+        let phone1 = Phone(name: "1907 Wall Set", imageName: "phone-fullscreen1", cellImageName: "image-cell1")
+        let phone2 = Phone(name: "1921 Dial Phone", imageName: "phone-fullscreen2", cellImageName: "image-cell2")
+        let phone3 = Phone(name: "1937 Desk Set", imageName: "phone-fullscreen3", cellImageName: "image-cell3")
+        let phone4 = Phone(name: "1984 Motorola Portable", imageName: "phone-fullscreen4", cellImageName: "image-cell4")
+//        phone4.name = "1984 Motorola Portable"
+//        phone4.imageName = "phone-fullscreen4"
+//        phone4.cellImageName = "image-cell4"
+        phones = [phone1, phone2, phone3, phone4]
     }
 
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return phoneNames?.count ?? 0
+        return phones?.count ?? 0
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PhoneCell", for: indexPath)
 
         // Configure the cell...
-        if let phoneName = phoneNames?[indexPath.row] {
-            cell.textLabel?.text = phoneName
+        if let phone = phones?[indexPath.row] {
+            cell.textLabel?.text = phone.name
+            if let imageName = phone.cellImageName {
+                cell.imageView?.image = UIImage(named: imageName)
+            }
         }
-        cell.imageView?.image = UIImage(named: "image-cell1")
+//        cell.imageView?.image = UIImage(named: "image-cell1")
 
         return cell
     }
@@ -102,7 +107,7 @@ class PhonesTableViewController: UITableViewController {
         }
 
         // Pass the selected object to the new view controller.
-        phoneViewController.phoneName = phoneNames?[indexPath.row]
+        phoneViewController.phone = phones?[indexPath.row]
     }
 
 }
