@@ -93,12 +93,9 @@ class PhonesTableViewController: UITableViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard segue.identifier == "ShowPhone" else {
-            return
-        }
-
-        // Get the new view controller using segue.destination.
-        guard let phoneViewController = segue.destination as? PhoneViewController else {
+        guard segue.identifier == "ShowPhone",
+            // Get the new view controller using segue.destination.
+            let phoneViewController = segue.destination as? PhoneViewController else {
             return
         }
 
